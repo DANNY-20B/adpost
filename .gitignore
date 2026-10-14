@@ -1,0 +1,22 @@
+# Operating system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary & Log files
+*.log
+edge_err.log
+
+# Personal & non-project files in root
+*.exe
+*.docx
+*.pdf
+
+# Environment files
+.env
+.env.local
+
+# Editor directories
+.vscode/
+.idea/
