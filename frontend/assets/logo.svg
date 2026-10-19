@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 52" fill="none">
+  <defs>
+    <linearGradient id="ap-l-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9E2C"/>
+      <stop offset="50%" stop-color="#F08A1B"/>
+      <stop offset="100%" stop-color="#DE4A20"/>
+    </linearGradient>
+    <linearGradient id="ap-l-shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="ap-l-text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F08A1B"/>
+      <stop offset="100%" stop-color="#DE4A20"/>
+    </linearGradient>
+    <filter id="ap-l-shadow" x="-15%" y="-15%" width="130%" height="135%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#F08A1B" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Left Icon: Shopping Basket Squircle Badge -->
+  <g transform="translate(2, 2)">
+    <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#ap-l-bg)" filter="url(#ap-l-shadow)"/>
+    <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#ap-l-shine)"/>
+    <rect x="0.5" y="0.5" width="47" height="47" rx="13.5" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
+
+    <!-- Scaled Basket Mark inside 48x48 badge -->
+    <g transform="translate(1, 0)">
+      <!-- Handle Apex 'A' -->
+      <path d="M23 8 C24.8 8 26 9.2 27 11.2 L33.5 21 C33.8 21.6 33.5 22.3 32.8 22.4 L29.8 22.6 C29.2 22.6 28.7 22.2 28.4 21.7 L23 12.5 L17.6 21.7 C17.3 22.2 16.8 22.6 16.2 22.6 L13.2 22.4 C12.5 22.3 12.2 21.6 12.5 21 L19 11.2 C20 9.2 21.2 8 23 8 Z" fill="#FFFFFF"/>
+
+      <!-- Basket Rim -->
+      <rect x="8.5" y="22" width="29" height="3.4" rx="1.7" fill="#FFFFFF"/>
+
+      <!-- Basket Base -->
+      <path d="M10.5 26.8 L13.3 39.5 C13.7 41.2 15.2 42.5 17 42.5 L29 42.5 C30.8 42.5 32.3 41.2 32.7 39.5 L35.5 26.8 Z" fill="#FFFFFF"/>
+
+      <!-- Ventilation Slots -->
+      <rect x="16" y="29.5" width="2.6" height="9" rx="1.3" fill="url(#ap-l-bg)"/>
+      <rect x="21.7" y="29.5" width="2.6" height="9" rx="1.3" fill="url(#ap-l-bg)"/>
+      <rect x="27.4" y="29.5" width="2.6" height="9" rx="1.3" fill="url(#ap-l-bg)"/>
+
+      <!-- Basket Sparkle Dot -->
+      <circle cx="23" cy="17.5" r="1.5" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- Typography: 'adpost' -->
+  <g transform="translate(62, 34)">
+    <text font-family="'Manrope', 'DM Sans', system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" letter-spacing="-1.2">
+      <tspan fill="#171A17">ad</tspan><tspan fill="url(#ap-l-text)">post</tspan>
+    </text>
+    <!-- Tagline dot -->
+    <circle cx="106" cy="-4" r="3.5" fill="url(#ap-l-bg)"/>
+  </g>
+
+  <!-- Subtext: 'BUY &amp; SELL MARKETPLACE' -->
+  <g transform="translate(63, 46)">
+    <text font-family="'DM Sans', system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="700" fill="#717D74" letter-spacing="1.5">
+      BUY &amp; SELL MARKETPLACE
+    </text>
+  </g>
+</svg>

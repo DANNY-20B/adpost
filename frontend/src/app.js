@@ -657,6 +657,10 @@
   function renderAbout() {
     return `
       <section class="page">
+        <div style="display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px; padding: 6px 14px 6px 8px; background: white; border: 1px solid var(--line); border-radius: 999px; box-shadow: 0 4px 12px rgba(27,35,28,.04);">
+          <img src="./assets/logo-icon.svg" alt="AdPost" width="24" height="24" style="border-radius: 7px;">
+          <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.8px; text-transform: uppercase; color: var(--green);">About AdPost</span>
+        </div>
         ${heading('Good things happen nearby.', 'A simpler way to find what you need and share what you have in Nigeria.')}
         <div class="about-grid">
           <article class="about-item">
@@ -686,6 +690,9 @@
       return `
         <section class="auth-shell" style="background: var(--paper); display: grid; place-items: center; min-height: calc(100vh - 161px);">
           <div class="auth-panel" style="width: min(100%, 420px); padding: 40px; background: white; border-radius: 12px; box-shadow: var(--shadow); border: 1px solid var(--line); text-align: center;">
+            <div style="margin-bottom: 18px; display: inline-flex; align-items: center; justify-content: center;">
+              <img src="./assets/logo-icon.svg" alt="AdPost Logo" width="52" height="52" style="border-radius: 14px; box-shadow: 0 8px 22px rgba(240,138,27,.28);">
+            </div>
             <div class="avatar" style="width: 56px; height: 56px; font-size: 24px; margin: 0 auto 16px;">${escapeHtml(currentUser.name.charAt(0).toUpperCase())}</div>
             <h1 style="font-family: var(--display); font-size: 24px; margin: 0 0 6px;">Signed in as ${escapeHtml(currentUser.name)}</h1>
             <p style="color: var(--muted); font-size: 13px; margin: 0 0 24px;">${escapeHtml(currentUser.email)}</p>
@@ -702,9 +709,12 @@
     return `
       <section class="auth-shell" style="background: var(--paper); display: grid; place-items: center; min-height: calc(100vh - 161px);">
         <div class="auth-panel" style="width: min(100%, 400px); padding: 40px; background: white; border-radius: 12px; box-shadow: var(--shadow); border: 1px solid var(--line);">
-          <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="font-family: var(--display); font-size: 28px; margin: 0 0 10px;">Welcome back</h1>
-            <p style="color: var(--muted); font-size: 14px; margin: 0;">Sign in to continue to AdPost.</p>
+          <div style="text-align: center; margin-bottom: 24px;">
+            <div style="margin-bottom: 14px; display: inline-flex; align-items: center; justify-content: center;">
+              <img src="./assets/logo-icon.svg" alt="AdPost Logo" width="56" height="56" style="border-radius: 15px; box-shadow: 0 10px 24px rgba(240,138,27,.3);">
+            </div>
+            <h1 style="font-family: var(--display); font-size: 26px; margin: 0 0 8px;">Welcome back</h1>
+            <p style="color: var(--muted); font-size: 13.5px; margin: 0;">Sign in to continue to AdPost.</p>
           </div>
           <form class="auth-form" id="login-form" style="display: grid; gap: 16px;">
             <label style="display: flex; flex-direction: column; gap: 6px; font-size: 12px; font-weight: bold; color: #555;">
