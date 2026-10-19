@@ -19,30 +19,31 @@
     </filter>
   </defs>
 
-  <!-- Left Icon: Shopping Basket Squircle Badge -->
+  <!-- Left Icon Mark -->
   <g transform="translate(2, 2)">
     <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#ap-l-bg)" filter="url(#ap-l-shadow)"/>
     <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#ap-l-shine)"/>
     <rect x="0.5" y="0.5" width="47" height="47" rx="13.5" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
 
-    <!-- Scaled Basket Mark inside 48x48 badge -->
-    <g transform="translate(1, 0)">
-      <!-- Handle Apex 'A' -->
-      <path d="M23 8 C24.8 8 26 9.2 27 11.2 L33.5 21 C33.8 21.6 33.5 22.3 32.8 22.4 L29.8 22.6 C29.2 22.6 28.7 22.2 28.4 21.7 L23 12.5 L17.6 21.7 C17.3 22.2 16.8 22.6 16.2 22.6 L13.2 22.4 C12.5 22.3 12.2 21.6 12.5 21 L19 11.2 C20 9.2 21.2 8 23 8 Z" fill="#FFFFFF"/>
-
+    <!-- Scaled Ribbon 'A' with Basket Apex -->
+    <g transform="translate(0, 0)">
+      <!-- Basket Handles -->
+      <path d="M21 11.5 C21 8.5 22.5 7 24 7 C25.5 7 27 8.5 27 11.5" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" fill="none"/>
       <!-- Basket Rim -->
-      <rect x="8.5" y="22" width="29" height="3.4" rx="1.7" fill="#FFFFFF"/>
+      <rect x="17.5" y="11.5" width="13" height="2" rx="1" fill="#FFFFFF"/>
+      <!-- Basket Body -->
+      <path d="M18.8 13.5 L20 18 C20.2 18.8 20.8 19.3 21.6 19.3 L26.4 19.3 C27.2 19.3 27.8 18.8 28 18 L29.2 13.5 Z" fill="#FFFFFF"/>
+      <!-- Basket Slats -->
+      <rect x="21" y="14.3" width="1.1" height="3.6" rx="0.5" fill="url(#ap-l-bg)"/>
+      <rect x="23.45" y="14.3" width="1.1" height="3.6" rx="0.5" fill="url(#ap-l-bg)"/>
+      <rect x="25.9" y="14.3" width="1.1" height="3.6" rx="0.5" fill="url(#ap-l-bg)"/>
 
-      <!-- Basket Base -->
-      <path d="M10.5 26.8 L13.3 39.5 C13.7 41.2 15.2 42.5 17 42.5 L29 42.5 C30.8 42.5 32.3 41.2 32.7 39.5 L35.5 26.8 Z" fill="#FFFFFF"/>
-
-      <!-- Ventilation Slots -->
-      <rect x="16" y="29.5" width="2.6" height="9" rx="1.3" fill="url(#ap-l-bg)"/>
-      <rect x="21.7" y="29.5" width="2.6" height="9" rx="1.3" fill="url(#ap-l-bg)"/>
-      <rect x="27.4" y="29.5" width="2.6" height="9" rx="1.3" fill="url(#ap-l-bg)"/>
-
-      <!-- Basket Sparkle Dot -->
-      <circle cx="23" cy="17.5" r="1.5" fill="#FFFFFF"/>
+      <!-- Left Leg -->
+      <path d="M21.5 20.2 L10.5 39.5 C10.2 40.1 10.6 40.8 11.3 40.8 L15.5 40.8 C16 40.8 16.4 40.5 16.7 40 L22 30 L24 26.5 L21.5 20.2 Z" fill="#FFFFFF" fill-opacity="0.95"/>
+      <!-- Right Leg -->
+      <path d="M26.5 20.2 L24 26.5 L26 30 L31.3 40 C31.6 40.5 32 40.8 32.5 40.8 L36.7 40.8 C37.4 40.8 37.8 40.1 37.5 39.5 L26.5 20.2 Z" fill="#FFFFFF" fill-opacity="0.95"/>
+      <!-- Dynamic Ribbon Crossbar -->
+      <path d="M14 33.5 C17.5 30.8 21.3 30.8 25 32.8 C28.7 34.8 32.5 34.8 36 32 L36 34.2 C32.5 37 28.7 37 25 35 C21.3 33 17.5 33 14 35.8 Z" fill="#FFFFFF"/>
     </g>
   </g>
 
@@ -51,7 +52,6 @@
     <text font-family="'Manrope', 'DM Sans', system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" letter-spacing="-1.2">
       <tspan fill="#171A17">ad</tspan><tspan fill="url(#ap-l-text)">post</tspan>
     </text>
-    <!-- Tagline dot -->
     <circle cx="106" cy="-4" r="3.5" fill="url(#ap-l-bg)"/>
   </g>
 
